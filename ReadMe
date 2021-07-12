@@ -1,0 +1,15 @@
+server : npm run server
+clint : npm run client
+
+run app : npm run app
+
+1.Register
+2.Login
+3.Add Book
+4.Home 
+5.Edit Book
+6.Delete Book
+7.Details
+8.Profile
+9.Edit Profile
+10.Logout

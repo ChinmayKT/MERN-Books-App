@@ -1,0 +1,316 @@
+* {
+  padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  background:url('./book.jpg');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.notes-page{
+  width: 100%;
+  min-height: 100vh;
+  color: rgb(7, 7, 7);
+}
+
+.notes-page header{ 
+  max-width:1920px;
+  min-height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(240, 242, 243)
+
+}
+.bookcontainer{
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  margin:0px;
+  padding:0px;
+
+}
+a{
+  text-decoration: none;
+  color :#34a8eb
+}
+
+.notes-page header .logo{ 
+  text-transform: uppercase;
+  letter-spacing:4px;
+  font-size: 30px;
+  color:#34a8eb
+
+}
+
+.notes-page header .name{ 
+  text-transform: uppercase;
+ 
+  font-size: 20px;
+
+}
+
+.notes-page header ul li {
+  list-style: none;
+  display : inline-block;
+  padding : 0 15px;
+
+}
+
+.notes-page header ul li a{
+  text-transform: uppercase;
+  opacity: 0.3;
+  font-size: 20px;
+
+}
+
+.notes-page header ul li a:hover{
+  color:rgb(0, 0, 0);
+  opacity: 1;
+  color: #34a8eb;
+ 
+}
+
+.notes-page section{ 
+  width : 100%;
+  box-shadow: 0 0 50px rgb(212, 200, 200);
+  padding :20px 0;
+  /* background : url('./memo.jpg'); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.note-wrapper{
+  max-width: 1920px;
+  display : flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin:auto;
+  
+}
+
+.card{
+  width:300px;
+  box-shadow: 0 0 5px black;
+  background : #34a8eb;
+  padding: 10px;
+  position: relative;
+  color: black;
+  margin: 15px;
+  cursor: pointer;
+  
+}
+
+.card:hover{
+  background: rgb(236, 230, 230);
+  box-shadow: 0 0 15px #34a8eb;
+  
+}
+
+.edit{
+  color: rgb(0, 0, 0);
+  background-color: #34a8eb;
+}
+
+.read{
+  color: rgb(0, 0, 0);
+  background-color: #34a8eb;
+}
+
+
+.card .close{ 
+  position: absolute;
+  top : 0;
+  right : 10px;
+  
+ 
+  cursor: pointer;
+  background: transparent;
+  border : none;
+  outline: none;
+  color : rgb(0, 0, 0)
+}
+
+.card h4{
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0;
+  text-transform: uppercase;
+  
+}
+
+.card .text-wrapper{
+  width: 100%;
+  display : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:7;
+  overflow: hidden;
+  margin:10px 0 ;
+  
+}
+
+.card .date { 
+  text-align:center;
+  
+}
+
+.card-footer{
+  display : flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  text-transform: uppercase;
+  font-size : 20px;
+  margin-bottom: 0px;
+
+}
+
+
+/* //***** create memory// */
+
+.create-note{
+  max-width:700px;
+  width : 100%;
+  margin : auto;
+  border : 5px solid white;
+  padding: 30px;
+  background:#34a8eb;
+  color:rgb(0, 0, 0);
+  /* box-shadow: 0 0 5px rgb(255, 252, 252); */
+  text-transform: uppercase;
+  border-radius: 40px ;
+
+}
+
+
+.create-note:hover{
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 15px #34a8eb;
+  border : 5px solid #34a8eb;
+  
+}
+
+.create-node .row{
+  width:100%;
+  margin : 10px 0;
+  margin-top: 10px;
+}
+
+.create-note input , 
+.create-note button{ 
+  width: 100%;
+  height : 40px;
+  padding : 0 5px;
+  margin-top: 15px;
+
+} 
+
+.create-note label{ 
+  text-transform: uppercase;
+  font-weight : 600;
+  letter-spacing:2px;
+}
+
+.create-note textarea{ 
+  width : 100%;
+  resize: none;
+  height: 100px;
+
+}
+
+
+
+.create-note button{ 
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight:500;
+  letter-spacing: 2px;
+  color :rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.create-note button:hover{ 
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 25px;
+  color :rgb(255, 255, 255);
+  background: #34a8eb;
+}
+
+@media(max-width: 500px){
+  .create-note{
+    padding:15px;
+    border: 5px solid white;
+  }
+}
+
+/* login register */
+
+.login-page{
+  position : relative;
+  width : 100%;
+  min-height: 100vh;
+}
+
+/* .login input ,
+.register input {
+  margin-bottom: 15px;
+} */
+
+.login,
+.register{
+  position: absolute;
+  top : 45%;
+  left : 70%;
+  transform: translate(-50%,-50%);
+}
+
+.login-page h2,
+.login-page h3{ 
+  color :rgb(68, 67, 67)
+}
+
+.login-page h3{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.login-page p{
+  margin:10px 0;
+  color : rgb(2, 2, 2)
+}
+
+.login-page span:hover{
+  color :#34a8eb;
+  cursor: pointer;
+}
+
+

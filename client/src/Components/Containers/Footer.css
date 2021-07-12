@@ -1,0 +1,17 @@
+.footer{
+    background: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.footer:hover{
+    background: #000000;
+    color: rgb(255, 253, 253);
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+
